@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="fade-in-image">
+        <img src="./SoftAnnualBillygoat-max-1mb.gif" alt="">
+        <img src="./output-onlinegiftools.gif" alt="">
+    </div>
+    <div class="ghost" id="ghostanimation" >
+        <img src="./artwork-deviantart-art-organism-digital.jpg" />
+    </div>
+
+
+    <script type="text/javascript">
+        function ShowHideDiv(btnGhost) {
+            var GhostStyle = document.getElementById("ghostanimation");
+    if (btnGhost.value == "Hide Ghost") {
+                GhostStyle.style.display = "none";
+                btnGhost.value = "Play Ghost";
+            } else {
+                GhostStyle.style.display = "block";
+                btnGhost.value = "Hide Ghost";
+            }
+        }
+    </script>
+    
+    <input id="btnGhost" type="button" value="Hide Ghost" onclick="ShowHideDiv(this)" />
+</div>
+</body>
+</html>
