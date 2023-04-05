@@ -1,3 +1,4 @@
+
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -11,27 +12,148 @@
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
-img{
+div > *{
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }
-.fade-in-image { animation: fadeIn 10s; }
-
+/* .fade-in-image { animation: fadeIn 5s; } */
+img{
+	z-index: 2;
+}
 
 @keyframes fadeIn {
     0% { opacity: 0; }
     50% {opacity: .5;}
     100% { opacity: 1; }
 }
-
+.Lyrics > *{
+	position: absolute;
+	width: 30vw;
+	height:5vh;
+	color: #44D62C;
+	margin-left: 100%;
+	z-index: 2;
+}
+.Lyrics2 > *{
+	position: fixed;
+	width: 30vw;
+	height:5vh;
+	color: #44D62C;
+	margin-left: 1000px;
+	z-index: 2;
+}
+h1{
+	font-size: 10vw;
+}
+p{
+	text-align: center;
+}
+.rick{
+	position: fixed;
+	margin-left:-10vw;
+	z-index: 4;
+	margin-top: 40vh;
+}
+.popUp{
+	position: fixed;
+	margin-left: 60vw;
+	z-index: 5	;
+	margin-top: 60vh;
+}
+.popUp2{
+	position: fixed;
+	margin-left: 60vw;
+	z-index: 5;
+	margin-top: 0vh;
+	animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
 body{
-    background-image: url(https://media.tenor.com/Qy4dAOV73dcAAAAC/skeleto-skeleton.gif);
+    background-image: url(./Untitled\ video\ -\ Made\ with\ Clipchamp.gif);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
+	position: absolute;
+	background-position-y: -100%;
+
+}
+.one{
+	position: absolute;
+	margin-top: -200%;
+}
+.two{
+	display: inline;
+	position: absolute;
+}
+.three{
+	display: inline;
+	position: absolute;
+}
+.banner{
+	position: absolute;
+	height: 98vh;
+	width: 16vw;
+	margin-bottom:-200%;
+	z-index: 1;
+}
+.banner2{
+	position: fixed;
+	margin-left: 82vw;
+	height: 100vh;
+	width: 18vw;
+}
+html{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0	;
 }
 
+.ghost1 > *{
+    animation: fly1 2s linear infinite;
+    top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 999;
+	pointer-events: none;
+}
+@keyframes fly1 {
+	0% {
+
+		transform: translate(200%,110vh) rotateZ(0deg);opacity: 1;
+	}
+
+	12.5% {
+		transform: translate(-120vw,-120%) rotateZ(20deg);
+	}
+
+	25% {
+		transform: translate(200%,50vh) scale(1.75) rotateZ(-20deg);
+	}
+
+	37.5% {
+		transform: translate(200%,-120%) rotateZ(-40deg);opacity: .5;
+	}
+
+	50% {
+		transform: translate(-100vw,50vh) rotateZ(0deg);
+	}
+
+	62.5% {
+		transform: translate(-20vw,100vh) rotateZ(20deg);
+	}
+	75% {
+		transform: translate(200%,100vh) rotateZ(20deg);opacity: .25;
+	}
+	87.5% {
+		transform: translate(50vw,-200%) scale(1.75) rotateZ(20deg);
+	}
+
+	100% {
+		transform: translate(-200%,110vh) rotateZ(0deg);opacity: 1;
+	}
+}
 .ghost > *{
-    animation: fly 25s linear infinite;
+    animation: fly 2s linear infinite;
     top: 0;
 	left: 0;
 	position: fixed;
